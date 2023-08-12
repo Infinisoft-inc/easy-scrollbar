@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import 'react-perfect-scrollbar/dist/css/styles.css';
 
-const EasyScrollBar = ({ children, trigger }) => {
+const EasyScrollBar = ({ children, trigger, ...props }) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ const EasyScrollBar = ({ children, trigger }) => {
   }, [trigger]);
 
   return (
-    <PerfectScrollbar ref={containerRef}>
+    <PerfectScrollbar ref={containerRef} {...props}>
       {children}
     </PerfectScrollbar>
   );

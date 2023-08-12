@@ -12,16 +12,11 @@ Because life's too short to spend hours on scrollbars. And because we believe th
 
 ### Installation
 
-First, you need to have `react-perfect-scrollbar` installed. If you haven't already:
-
-```bash
-npm install react-perfect-scrollbar
-```
 
 Then, install `EasyScrollBar`:
 
 ```bash
-npm install easy-scroll-bar
+npm install easy-scrollbar
 ```
 
 ### Usage
@@ -30,7 +25,7 @@ Here's a simple example:
 
 ```jsx
 import React from 'react';
-import EasyScrollBar from 'easy-scroll-bar';
+import {EasyScrollBar} from 'easy-scrollbar';
 
 function MyComponent() {
   return (
@@ -43,8 +38,8 @@ function MyComponent() {
 
 ### Props
 
-- `children`: The content you want to be scrollable.
 - `trigger`: A variable that, when changed, will cause the scrollbar to stick to the bottom. Useful if you're adding new content to the scrollable area and want the scrollbar to adjust.
+- `any other props`: Any props will be passed down to `React Perfect Scrollbar`
 
 ## A Fun Note
 

@@ -1,6 +1,6 @@
 {
   "name": "easy-scrollbar",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A minimalist wrapper for react-perfect-scrollbar that ensures the scrollbar sticks to the bottom.",
   "main": "./dist/easy-scrollbar-lib.js",
   "scripts": {
